@@ -105,7 +105,7 @@ def HJs(val):
             try:
                 py_res = val.__call__(*args)
             except Exception as e:
-                message = 'your Python function failed!  '
+                message = 'your Python function failed: %s' % e
                 try:
                     message += e.message
                 except:
